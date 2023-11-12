@@ -11,8 +11,8 @@ body {
 
 
 .picture {
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
     margin-left: 40px;
 }
 
@@ -35,8 +35,8 @@ h1 {
     /* background-color: yellow; */
     margin: auto;
     width: 380px;
-    margin-top: -430px;
-    margin-left: 530px;
+    margin-top: -410px;
+    margin-left: 480px;
 }
 
 .content1 h2
@@ -54,7 +54,7 @@ h1 {
     /* background-color: red; */
     margin: auto;
     width: 300px;
-    margin-top: -435px;
+    margin-top: -440px;
     margin-right: 20px;
 }
 
@@ -74,7 +74,7 @@ h1 {
 
     .picture
     {
-        margin-left: 210px;
+        margin-left: 110px;
     }
 
     .content1
@@ -88,11 +88,11 @@ h1 {
 
     .content1 h2
     {
-        font-size: 50px;
+        font-size: 25px;
     }
     .content1 p
     {
-        font-size: 30px;
+        font-size: 20px;
 
     }
 
@@ -100,25 +100,19 @@ h1 {
     {
         height: 300px;
         width: 90%;
-        margin-top: 20px;
+        margin-top: -210px;
         margin-left: 40px;
     }
 
     .content2 h3
     {
-        font-size: 40px;
+        font-size: 25px;
         
     }
 
     .content2 ul
     {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
-
-    .content2 ul
-    {
-        font-size: 30px;
-    }
-}
