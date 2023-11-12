@@ -88,11 +88,11 @@ h1 {
 
     .content1 h2
     {
-        font-size: 25px;
+        font-size: 35px;
     }
     .content1 p
     {
-        font-size: 20px;
+        font-size: 25px;
 
     }
 
@@ -100,19 +100,18 @@ h1 {
     {
         height: 300px;
         width: 90%;
-        margin-top: -210px;
+        margin-top: -170px;
         margin-left: 40px;
     }
 
     .content2 h3
     {
-        font-size: 25px;
+        font-size: 30px;
         
     }
 
     .content2 ul
     {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
-
