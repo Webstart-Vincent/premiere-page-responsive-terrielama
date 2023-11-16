@@ -74,7 +74,9 @@ h1 {
 
     .picture
     {
-        margin-left: 285px;
+        margin-left: 200px;
+        height: 600px;
+        width: 600px;
     }
 
     .content1
@@ -82,17 +84,17 @@ h1 {
         /* background-color: red; */
         height: 560px;
         width: 90%;
-        margin-top: 60px;
+        margin-top: 0px;
         margin-left: 20px;
     }
 
     .content1 h2
     {
-        font-size: 35px;
+        font-size: 45px;
     }
     .content1 p
     {
-        font-size: 25px;
+        font-size: 35px;
 
     }
 
@@ -100,18 +102,72 @@ h1 {
     {
         height: 300px;
         width: 90%;
-        margin-top: -170px;
+        margin-top: 70px;
         margin-left: 40px;
     }
 
     .content2 h3
     {
-        font-size: 30px;
+        font-size: 45px;
         
     }
 
     .content2 ul
     {
-        font-size: 25px;
+        font-size: 35px;
+    }
+}
+
+/* ---------------------------- */
+
+@media (max-width: 830px) {
+
+    h1
+    {
+        font-size: 75px;
+    }
+    .picture
+    {
+        margin-left: 120px;
+        height: 550px;
+        width: 550px;
+    }
+
+    .content1
+    {
+        /* background-color: red; */
+        height: 560px;
+        width: 90%;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    .content1 h2
+    {
+        font-size: 45px;
+    }
+    .content1 p
+    {
+        font-size: 35px;
+
+    }
+
+    .content2
+    {
+        height: 300px;
+        width: 90%;
+        margin-top: 220px;
+        margin-left: 40px;
+    }
+
+    .content2 h3
+    {
+        font-size: 45px;
+        
+    }
+
+    .content2 ul
+    {
+        font-size: 35px;
     }
 }
