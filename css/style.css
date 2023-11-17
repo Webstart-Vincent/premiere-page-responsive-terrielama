@@ -12,8 +12,9 @@ body {
 
 .picture img {
 
-    width: 350px;
+    width: 340px;
     border-radius: 50%;
+    display: block;
  
     
 }
@@ -24,7 +25,7 @@ h1 {
     color: black;
     font-size: 60px;
     text-align: center;
-    margin-bottom: 110px; 
+    margin-bottom: 100px; 
     
 }
 
@@ -79,10 +80,14 @@ h1 {
     .big_content {
         grid-template-columns: 1fr;
         margin:auto;
-        margin-left: 20px;
         width: 90%;
     }
 
+    .picture img
+    {
+        display: flex;
+        margin-right: 200px;
+    }
 
     h1
     {
@@ -103,6 +108,7 @@ h1 {
         margin:  auto;
         display: flex;
         flex-direction: column; 
+        
         
     }
 
