@@ -13,7 +13,6 @@ body {
 .picture img {
 
     width: 350px;
-    display: block;
     border-radius: 50%;
  
     
@@ -33,7 +32,7 @@ h1 {
 {
     width: 90%;
     display: grid;
-    grid-template-columns: 3fr 4fr;
+    grid-template-columns: 1fr 4fr;
     margin-top:  -460px;
 }
 
