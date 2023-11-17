@@ -79,21 +79,26 @@ h1 {
     font-size: 20px;
 }
 
+
 @media (max-width: 800px) {
     .big_content {
-        display: block; /* Convertir en affichage en bloc pour une largeur d'écran plus étroite */
-        margin-top: 20px; /* Ajustement de l'espacement */
+        width: 90%;
+        display: block; 
+        margin-top: 20px; 
+        margin-left: 20px;
+    
     }
 
-    .content1 {
-        width: 90%; /* Utilisation de pourcentage pour une largeur adaptative */
-        margin: auto;
+    .picture {
+        margin: 0 auto; 
+        display: block; 
     }
 
+    .content1,
     .content2 {
-        width: 90%; /* Utilisation de pourcentage pour une largeur adaptative */
-        margin-top: 20px; /* Ajustement de l'espacement */
-        margin-left: auto;
-        margin-right: 5px;
+        width: 100%;
+        margin-top: 15px; 
+        margin-left:10px; 
+        margin-right: auto;
     }
 }
