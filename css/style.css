@@ -12,10 +12,9 @@ body {
 
 .picture img {
 
-    width: 340px;
+    width: 330px;
     border-radius: 50%;
-    display: block;
- 
+
     
 }
 
@@ -26,6 +25,7 @@ h1 {
     font-size: 60px;
     text-align: center;
     margin-bottom: 100px; 
+    
     
 }
 
@@ -75,6 +75,20 @@ h1 {
 }
 
 /* --------------------------------------------------------- */
+nav {
+    /* background-color: rgb(255, 0, 0); */
+    padding: 20px; /*utiliser le padding pour des page responsive sinon utliser le height*/
+    position: fixed;
+    inset: 0; /*équivalent de top:0;right:0;bottom:0;left:0;*/
+    display: grid;
+    align-content: center; /*aligne = vertical, justify = horizontal*/
+    justify-content: center;
+    gap: 25px; /* l'espace entre les elements*/
+    text-align: center; /* centrer les mots ou les éléments sur la meme ligne*/
+}
+
+/* --------------------------------------------------------- */
+
 
 @media (max-width: 850px) {
     .big_content {
