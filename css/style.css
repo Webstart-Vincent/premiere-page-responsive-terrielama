@@ -94,9 +94,10 @@ nav {
 @media (max-width: 850px) {
 
     .big_content {
+       
         display: grid;
         grid-template-columns: 1fr  ;
-        margin-top: -20px;
+         margin-top: 30px;
         width: 60%;
         margin-left: 50px;
         
@@ -188,7 +189,7 @@ nav {
     .big_content
     {
         margin-right: 30px;
-        margin-top: 0px;
+        margin-top: 50px;
     }
 
 /* ------------------------------------------------- */
@@ -202,7 +203,7 @@ nav {
     }
 }
 
-@media (min-width: 850px) and (max-width: 1024px) {
+@media (min-width: 850px) and (max-width: 1023px) {
     .picture {
         position: relative;
         left: 50%;
@@ -211,7 +212,18 @@ nav {
 
     .big_content
     {
+        margin-top: 40px;
         position: relative;
         right: 20%;
     }
+    nav 
+    {
+        display: flex;
+        bottom: auto;
+        padding: 20px;
+        justify-content: end;
+        
+    }
+
+    
 }
