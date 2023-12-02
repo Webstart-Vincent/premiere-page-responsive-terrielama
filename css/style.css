@@ -1,77 +1,37 @@
-* {
-    font-family: 'Stardos Stencil', sans-serif;
-    
+* 
+{  
+     font-family: 'Stardos Stencil', sans-serif;
 }
 
-body {
-    padding: 10px;
+body 
+{
+    padding: 15px;
     background: rgb(204, 132, 164);
     background: radial-gradient(circle, rgba(204, 132, 164, 1) 0%, rgba(71, 72, 159, 1) 100%);
-    margin-top: 55px;
 }
 
-
-.picture {
-    width: 300px;
+img 
+{
     border-radius: 50%;
-    /* float: left; */
+    margin-bottom: 60px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
-
-h1 {
-    /* background-color:beige; */
+h1 
+{
+    margin-bottom: 50px;
+    margin-top: 20px;
     color: black;
-    font-size: 50px;
     text-align: center;
-    
-
+    font-size: 40px;
 }
 
-.big_content
+nav 
 {
-
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-    margin-left: 300px; 
-    margin-bottom: 220px;
-
-}
-
-/* .content1
-{
-} */
-
-/* .content1 h2
-{
-} */
-
-.content1 p
-{
-    font-size: 20px;
-}
-
-/* .content2
-{
-} */
-
-.content2 h3
-{
-    width: 100%;
-    font-size: 25px;
-    margin-left: 100px;
-    margin-bottom: -30px;
-}
-
-.content2 ul
-{
-    font-size: 20px;
-    margin-left: 90px;
-}
-
-/* --------------------------------------------------------- */
-nav {
-    /* background-color: rgba(255, 0, 0, 0.573); */
+    background-color: yellow;
     margin-bottom: 60px;
     padding: 20px; /*utiliser le padding pour des page responsive sinon utliser le height*/
     position: fixed;
@@ -83,68 +43,48 @@ nav {
     text-align: center; /* centrer les mots ou les éléments sur la meme ligne*/
 }
 
-/* --------------------------------------------------------- */
-.burger
+ul 
 {
-    display: none;
+    color: black;
+    font-weight: 900;
 }
-/* --------------------------------------------------------- */
 
 
-@media (max-width: 850px) {
-
-    .big_content {
-       
-        display: grid;
-        grid-template-columns: 1fr  ;
-         margin-top: 30px;
-        width: 60%;
-        margin-left: 50px;
-        
-        
-    }
-
-    .picture
-    {
-        margin-top: 20px;
-        width: 230px;
-        border-radius:50%;
-        display: block;
-        margin: auto;
-    }
-
-    h1
-    {
-        margin-top: 20px;
-        font-size: 30px;
-        
-    }
-
-    .content1
-    {
-        margin:  auto;
-        /* flex-direction: column;  */
-    }
-
-    .content2 
-    {
-        margin-left: -100px;
-    }
-
-    .burger
+p 
 {
+    color: black;
+    font-weight:bold;
+}
+
+h2 
+{
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+ul 
+{
+    margin-left: 20px;
+}
+/* ------------------------------------------------------------------------------ */
+
+
+.burger 
+{
+    position: fixed;
+    z-index: 1;
     display: grid;
     width: 40px;
-    gap:6px;
-    margin-top:-40px;
+    gap: 8px;
 }
 
-.burger span
+.burger span 
 {
     height: 4px;
     background-color: black;
     border-radius: 1000px;
-
 }
 
 .burger.cross :nth-child(1)
@@ -163,36 +103,21 @@ nav {
     display: none;
 }
 
+/* ------------------------------------------------------------------------------ */
 
-}
-
-@media (min-width: 1024px) 
-{
-    h1
-    {
-        margin-top: -400px;
-        margin-right: 100px;
-    }
+@media (min-width: 800px) {
     .picture 
     {
-        width: 250px;
-        margin: auto;
-        margin-top: 140px;
+        gap: 20px;
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+        margin-top: 90px;
     }
-
-    .big_content .content1 p,
-    .big_content .content2 ul
+    .burger 
     {
-        font-size: 18px;
+        display: none;
     }
 
-    .big_content
-    {
-        margin-right: 30px;
-        margin-top: 50px;
-    }
-
-/* ------------------------------------------------- */
     nav 
     {
         display: flex;
@@ -201,29 +126,34 @@ nav {
         justify-content: end;
         
     }
+
 }
 
-@media (min-width: 850px) and (max-width: 1023px) {
+/* ------------------------------------------------------------------------------ */
+
+
+@media (min-width: 1000px) {
     .picture {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+        gap: 30px;
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .big_content
+    img 
     {
-        margin-top: 40px;
-        position: relative;
-        right: 20%;
+        margin-top: 30px;
+        width: 90%;
     }
-    nav 
+    .content 
     {
-        display: flex;
-        bottom: auto;
-        padding: 20px;
-        justify-content: end;
-        
+        gap: 35px;
+        display: grid;
+        grid-template-columns: 4fr 4fr;
     }
-
-    
+    h1 {
+        text-align: left;
+    }
 }
