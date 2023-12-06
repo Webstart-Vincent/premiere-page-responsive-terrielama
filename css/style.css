@@ -38,6 +38,8 @@ h1
 
 nav 
 {
+    webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background-color: #e4cddb;
     border-bottom:  solid;
     backdrop-filter: blur(12px) ;
