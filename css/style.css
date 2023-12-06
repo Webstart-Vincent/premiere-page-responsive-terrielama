@@ -1,13 +1,20 @@
 * 
 {  
-     font-family: 'Stardos Stencil', sans-serif;
+    font-family: 'Stardos Stencil', sans-serif;
 }
+
+/* variable */
+:root
+{
+    --transition: 0.5s cubic-bezier(0,2.02,1,-0.36);
+}
+
+
 
 body 
 {
     padding: 15px;
-    background: rgb(204, 132, 164);
-    background: radial-gradient(circle, rgba(204, 132, 164, 1) 0%, rgba(71, 72, 159, 1) 100%);
+    background-color: #e4cddb;
 }
 
 img 
@@ -31,16 +38,31 @@ h1
 
 nav 
 {
-    background-color: yellow;
-    margin-bottom: 60px;
+    background-color: #e4cddb;
+    border-bottom:  solid;
+    backdrop-filter: blur(12px) ;
     padding: 20px; /*utiliser le padding pour des page responsive sinon utliser le height*/
     position: fixed;
     inset: 0; /*équivalent de top:0;right:0;bottom:0;left:0;*/
-    display: grid;
     align-content: center; /*aligne = vertical, justify = horizontal*/
+    display: grid;
+
     justify-content: center;
     gap: 25px; /* l'espace entre les elements*/
     text-align: center; /* centrer les mots ou les éléments sur la meme ligne*/
+        transform: translateX(-100%); /* pour que la nav disparaisse completement */
+        transition: var(--transition);
+}
+
+nav a
+{
+    color: black;
+    text-decoration: none;
+    font-size:larger;
+}
+.burger.cross + nav
+{
+    transform: none;
 }
 
 ul 
@@ -79,12 +101,13 @@ ul
     width: 40px;
     gap: 8px;
 }
-
-.burger span 
+/* ------------- dont repeat ys */
+.burger > span 
 {
     height: 4px;
     background-color: black;
-    border-radius: 1000px;
+    transition: var(--transition);
+    border-radius:2px;
 }
 
 .burger.cross :nth-child(1)
@@ -95,12 +118,13 @@ ul
 
 .burger.cross :nth-child(2)
 {
-    transform: translateX(0px) rotate(-40deg);
+    opacity: 0;
+    transform: scale(0.1);
 }
 
 .burger.cross :nth-child(3)
 {
-    display: none;
+    transform: translateY(-12px) rotate(-45deg);
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -124,6 +148,8 @@ ul
         bottom: auto;
         padding: 20px;
         justify-content: end;
+        transform:none;
+        
         
     }
 
@@ -147,7 +173,7 @@ ul
         margin-top: 30px;
         width: 90%;
     }
-    .container
+    .container 
     {
         gap: 35px;
         display: grid;
@@ -156,4 +182,5 @@ ul
     h1 {
         text-align: left;
     }
+
 }
